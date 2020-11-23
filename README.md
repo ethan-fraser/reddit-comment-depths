@@ -21,7 +21,7 @@ Using python 3.8 or greater:
 - Click *create app*
 
 #### 4. Create praw.ini
-Create a `praw.ini` file in the project folder with the following
+Create a `praw.ini` file in the project folder with the following. The client id is the string directly under the name of the app you just created. Click *edit* to see the secret.
 ```
 client_id=<client-id>
 client_secret=<client-secret>
