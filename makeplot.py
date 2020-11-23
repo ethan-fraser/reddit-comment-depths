@@ -48,7 +48,7 @@ def plot_values(title, ids, averages, x, y, n):
     x = np.arange(1, len(y)+1, 1)
     plt.plot(x, y, "b-", label=ids[i])
     #plt.ylim([0,150])
-    #plt.xlim([1,12])
+    plt.xlim([1,30])
     plt.xlabel("Comment level")
     plt.ylabel("Average score")
     plt.title(title)

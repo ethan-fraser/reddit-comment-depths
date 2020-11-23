@@ -4,9 +4,7 @@ import sys
 
 # set up reddit instance
 reddit = praw.Reddit(
-    client_id="_2x0vWbs6BnMcQ",
-    client_secret="w96UEy3foaRcNIVQn56OaDMMmTurxA",
-    user_agent="reddit comment depth analysis"
+    user_agent = "reddit comment depth analysis"
 )
 
 def get_subreddit_from_id(submission_id):
@@ -86,6 +84,6 @@ if __name__ == "__main__":
         df_averages = calculate_averages(df_comments)
 
         print(f"bf: {bf_averages}\ndf: {df_averages}")
-        with open(output_file, "a") as avgs_file: # <<<< change output file here <<<<<<
+        with open(output_file, "a") as avgs_file:
             avgs_file.write(f"{submission.id}:{bf_averages}:{df_averages}\n")
 
